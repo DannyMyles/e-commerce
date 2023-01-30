@@ -12,8 +12,8 @@ const Wrapper = styled.div`
   padding: 20px;
 `;
 const Title = styled.h1`
-  font-size: 40px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 300;
   text-align: center;
 `;
 const Top = styled.div`
@@ -101,7 +101,6 @@ const ProductAmountContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-  cursor: pointer;
     
 `
 const ProductAmount = styled.span`
@@ -121,10 +120,7 @@ const Summary = styled.div`
 `;
 const SummaryItem = styled.div`
   margin: 30px 0;
-  display: flex;
-  justify-content: space-between;
-  font-weight: ${props => props.type === "total" && '500'};
-  font-size: ${props => props.type === "total" && '24px'};
+  df
 `;
 
 const SummaryTitle = styled.h1`
@@ -137,13 +133,7 @@ const SummaryItemPrice = styled.span`
 const SummaryItemText = styled.span`
 `;
 const Button = styled.button`
-width: 100%;
-  padding: 20px;
-  border:none;
-  border-radius: 10px;
-  background-color: #0099a8;
-  color:#fff;
-  font-weight: 500;
+
 `;
 const Cart = () => {
   return (
@@ -230,8 +220,8 @@ const Cart = () => {
               <SummaryItemPrice>$ -5.90</SummaryItemPrice>
             </SummaryItem>
 
-            <SummaryItem type='total'>
-              <SummaryItemText>Total</SummaryItemText>
+            <SummaryItem>
+              <SummaryItemText type='total'>Total</SummaryItemText>
               <SummaryItemPrice>$ 80</SummaryItemPrice>
             </SummaryItem>
 

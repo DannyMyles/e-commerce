@@ -4,16 +4,14 @@ import Announcements from "../../components/announcements/Announcements";
 import Footer from "../../components/footer/Footer";
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
-const Container = styled.div`
-  text-align:left;
-`;
+const Container = styled.div``;
 
 const Wrapper = styled.div`
   padding: 20px;
 `;
 const Title = styled.h1`
-  font-size: 40px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 300;
   text-align: center;
 `;
 const Top = styled.div`
@@ -83,12 +81,6 @@ const ProductColor = styled.div`
 `;
 const ProductSize = styled.span``;
 
-const Hr = styled.hr`
-  background-color: #dbd9d9;
-  border: none;
-  height: 1px;
-  margin: 1.5rem;
-`
 const PriceDetails = styled.div`
   flex: 1;
   display: flex;
@@ -101,7 +93,6 @@ const ProductAmountContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-  cursor: pointer;
     
 `
 const ProductAmount = styled.span`
@@ -114,36 +105,6 @@ const ProductPrice = styled.span`
 `
 const Summary = styled.div`
   flex: 1;
-  border: 0.5px solid lightgray;
-  border-radius: 10px;
-  padding: 20px;
-  height: 50vh;
-`;
-const SummaryItem = styled.div`
-  margin: 30px 0;
-  display: flex;
-  justify-content: space-between;
-  font-weight: ${props => props.type === "total" && '500'};
-  font-size: ${props => props.type === "total" && '24px'};
-`;
-
-const SummaryTitle = styled.h1`
-  font-weight: 200;
-`;
-
-const SummaryItemPrice = styled.span`
-`;
-
-const SummaryItemText = styled.span`
-`;
-const Button = styled.button`
-width: 100%;
-  padding: 20px;
-  border:none;
-  border-radius: 10px;
-  background-color: #0099a8;
-  color:#fff;
-  font-weight: 500;
 `;
 const Cart = () => {
   return (
@@ -164,7 +125,7 @@ const Cart = () => {
           <Info>
             <Product>
               <ProductDetail>
-                <Image src="https://i.pinimg.com/564x/13/34/26/1334267ac996840ecfd2d653d0109878.jpg" />
+                <Image src="https://i.pinimg.com/564x/6e/61/cf/6e61cf6b995fc23a384b0e7924a5ce4d.jpg" />
                 <Details>
                   <ProductName>
                     <b>Product: </b>CASUAL WALKING SHOES {" "}
@@ -185,58 +146,11 @@ const Cart = () => {
                 <ProductPrice>$30</ProductPrice>
               </PriceDetails>
             </Product>
+            <hr />
 
-            <Hr />
-
-            <Product>
-              <ProductDetail>
-                <Image src="https://i.pinimg.com/564x/11/01/0e/11010e959049f295fa3aa58b5df4416e.jpg" />
-                <Details>
-                  <ProductName>
-                    <b>Product: </b>CASUAL WALKING SHOES {" "}
-                  </ProductName>
-                  <ProductId>
-                    <b>ID:</b> 789564
-                  </ProductId>
-                  <ProductColor color="black" />
-                  <ProductSize><b>Size:</b> XS</ProductSize>
-                </Details>
-              </ProductDetail>
-              <PriceDetails>
-                <ProductAmountContainer>
-                    <AddIcon/>
-                    <ProductAmount>2</ProductAmount>
-                    <RemoveIcon/>
-                </ProductAmountContainer>
-                <ProductPrice>$30</ProductPrice>
-              </PriceDetails>
-            </Product>
-
+            
           </Info>
-          <Summary>
-            <SummaryTitle>ORDER SUMMARY</SummaryTitle>
-            <SummaryItem>
-              <SummaryItemText>Subtotal</SummaryItemText>
-              <SummaryItemPrice>$ 80</SummaryItemPrice>
-            </SummaryItem>
-
-            <SummaryItem>
-              <SummaryItemText>Estimated Shipping</SummaryItemText>
-              <SummaryItemPrice>$ 5.90</SummaryItemPrice>
-            </SummaryItem>
-
-            <SummaryItem>
-              <SummaryItemText>Shipping Discount</SummaryItemText>
-              <SummaryItemPrice>$ -5.90</SummaryItemPrice>
-            </SummaryItem>
-
-            <SummaryItem type='total'>
-              <SummaryItemText>Total</SummaryItemText>
-              <SummaryItemPrice>$ 80</SummaryItemPrice>
-            </SummaryItem>
-
-            <Button>CHECKOUT NOW</Button>
-          </Summary>
+          <Summary>summary</Summary>
         </Bottom>
       </Wrapper>
       <Footer />
