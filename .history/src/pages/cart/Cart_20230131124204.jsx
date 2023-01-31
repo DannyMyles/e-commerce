@@ -151,7 +151,7 @@ width: 100%;
   background-color: #0099a8;
   color:#fff;
   font-weight: 500;
-  cursor: pointer;
+  cur
 `;
 const Cart = () => {
   return (
